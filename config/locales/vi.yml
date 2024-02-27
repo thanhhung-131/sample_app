@@ -1,0 +1,43 @@
+vi:
+  hello: "Xin chào"
+  show_product: "Hiển thị sản phẩm này"
+  back_to_products: "Quay lại danh sách sản phẩm"
+  edit_product: "Chỉnh sửa sản phẩm này"
+  destroy_product: "Xoá sản phẩm này"
+  created_product: "Sản phẩm đã được tạo thành công."
+  updated_product: "Sản phẩm đã được cập nhật thành công."
+  destroyed_product: "Sản phẩm đã được xoá thành công."
+  ruby_tutorial: "Hướng dẫn Ruby on Rails %{project_name}"
+  name: "sample app"
+  name_: "Tên sản phẩm:"
+  zone: "Khu vực:"
+  date: "Ngày:"
+  zone_new: "Hành động Tạo Vùng Mới"
+  zone_edit: "Hành động Chỉnh sửa Vùng"
+  not_found: "Không tìm thấy %{model}"
+  product: "sản phẩm"
+  user: "người dùng"
+  home: "trang chủ"
+  help: "hỗ trợ"
+  login: "đăng nhập"
+  edit_zone: "Khu vực chỉnh sửa"
+  new_zone: "Khu vực mới"
+  new_product: "Sản phẩm Mới"
+  editing_product: "Đang chỉnh sửa Sản phẩm"
+  products: "Các sản phẩm"
+  static_pages_help: "Trang tĩnh/Hỗ trợ"
+  static_pages_home: "Trang Tĩnh/Trang chủ"
+  active_record:
+    models:
+      product: "Sản phẩm"
+  errors:
+    prohibited_saved: "không thể lưu %{model} này:"
+    format: "%{attribute} %{message}"
+    messages:
+      blank: "không thể để trống"
+      taken: "Đã tồn tại"
+    models:
+      product:
+        attributes:
+          name:
+            blank: "không thể để trống"
