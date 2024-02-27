@@ -22,3 +22,7 @@ vi:
             birthday:
               blank: "Không thể bỏ trống"
               birthday_within_last_100_years: "Phải bé hơn 100 tuổi"
+            password:
+              blank: "Không thể bỏ trống"
+              too_short: "Quá ngắn (tối thiểu %{count} kí tự)"
+              too_long: "Quá dài (tối đa %{count} kí tự)"

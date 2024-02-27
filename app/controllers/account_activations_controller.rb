@@ -26,7 +26,7 @@ class AccountActivationsController < ApplicationController
   end
 
   def check_activation
-    return unless @user.activated? && !@user.authenticate?(:activation, params[:id])
+    return if !@user.activated? || @user.authenticate?(:activation, params[:id])
 
     flash[:danger] = t("layouts.messages.invalid_activation_link")
     redirect_to root_url

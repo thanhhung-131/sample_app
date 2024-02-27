@@ -11,6 +11,7 @@ vi:
       account: "Tài khoản"
       edit_user: "Chỉnh sửa thông tin"
       user_mailer: "Thư người dùng"
+      forgot_password: "Quên mật khẩu"
     messages:
       success: "Thành công!"
       error: "Thất bại, vui lòng thử lại!"
@@ -21,6 +22,7 @@ vi:
       please_log_in: "Vui lòng đăng nhập!"
       not_authorized: "Không được phép!"
       deleted_success: "Xóa thành công!"
+      forgot_password: "(quên mật khẩu)"
   helpers:
     page_title: "Ứng dụng Mẫu Ruby on Rails"
   static_pages:
@@ -36,10 +38,12 @@ vi:
       sign_up: "Đăng ký"
       create_my_account: "Tạo tài khoản"
       confirmation: "Xác nhận"
+      submit: "Gửi"
     edit:
       update_profile: "Cập nhật thông tin cá nhân"
       save_changes: "Lưu thay đổi"
       change: "Thay đổi"
+      update_password: "Cập nhật mật khẩu"
     index:
       all_users: "Tất cả người dùng"
       user_not_found: "Không tìm thấy người dùng!"
@@ -54,4 +58,12 @@ vi:
       information: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
       activated: "Đã kích hoạt"
       invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
-      not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email của bạn để lấy liên kết kích hoạt."
+      not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để lấy liên kết kích hoạt."
+      sent_password_reset: "Email đã được gửi với hướng dẫn đặt lại mật khẩu"
+      password_reset: "Đặt lại mật khẩu"
+      password_reset_instruction1: "Để đặt lại mật khẩu, hãy nhấp vào liên kết bên dưới:"
+      password_reset_instruction2: "Link sẽ hết hạn sau 2 giờ."
+      password_reset_instruction3: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này."
+      password_reset_expired: "Liên kết đặt lại mật khẩu đã hết hạn"
+      password_reset_success: "Mật khẩu đã được đặt lại"
+      password_reset_failed: "Đặt lại mật khẩu thất bại"
