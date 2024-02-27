@@ -45,6 +45,8 @@ gem "bcrypt", "~> 3.1.20"
 gem "bootsnap", require: false
 gem "bootstrap-sass", "~> 3.4.1"
 gem "config"
+gem "faker", "2.21.0"
+gem "pagy"
 gem "rails-i18n"
 gem "rails-settings-cached"
 gem "rubocop"
