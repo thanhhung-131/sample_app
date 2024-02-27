@@ -5,12 +5,15 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+      log_out: "Đăng xuất"
+      profile: "Trang cá nhân"
+      settings: "Cài đặt"
+      account: "Tài khoản"
     messages:
-      sign_up_success: "Đăng ký thành công!"
-      sign_up_error: "Đăng ký thất bại, vui lòng thử lại!"
-      sign_in_success: "Đăng nhập thành công!"
-      sign_in_error: "Đăng nhập thất bại, vui lòng thử lại!"
+      success: "Thành công!"
+      error: "Thất bại, vui lòng thử lại!"
       user_not_found: "Không tìm thấy người dùng!"
+      invalid_email_password_combination: "Email/mật khẩu không hợp lệ!"
   helpers:
     page_title: "Ứng dụng Mẫu Ruby on Rails"
   static_pages:

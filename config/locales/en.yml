@@ -5,12 +5,15 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log In"
+      log_out: "Log Out"
+      profile: "Profile"
+      settings: "Settings"
+      account: "Account"
     messages:
-      sign_up_success: "Sign up successfully!"
-      sign_up_error: "Sign up fail, please try again!"
-      sign_in_success: "Sign in successfully!"
-      sign_in_error: "Sign in fail, please try again!"
+      success: "Successfully!"
+      error: "Fail, please try again!"
       user_not_found: "User not found!"
+      invalid_email_password_combination: "Invalid email/password combination!"
   helpers:
     page_title: "Ruby on Rails Tutorials Sample App"
   static_pages:
