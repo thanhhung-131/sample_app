@@ -9,8 +9,6 @@
   <%= f.label :gender %>
   <%= f.select :gender, Settings.option_gender, prompt: Settings.prompt_gender %>
   <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.label :password %>
   <%= f.password_field :password, class: "form-control" %>
   <%= f.label :password_confirmation, t("users.new.confirmation") %>
   <%= f.password_field :password_confirmation, class: "form-control" %>

@@ -10,6 +10,7 @@ vi:
       settings: "Cài đặt"
       account: "Tài khoản"
       edit_user: "Chỉnh sửa thông tin"
+      user_mailer: "Thư người dùng"
     messages:
       success: "Thành công!"
       error: "Thất bại, vui lòng thử lại!"
@@ -45,8 +46,12 @@ vi:
     delete:
       link: "xóa"
       are_you_sure: "Bạn có chắc chắn?"
-  gender:
-    prompt: "Chọn giới tính"
-    female: "nữ"
-    male: "nam"
-    other: "khác"
+    mailer:
+      activation: "Kích hoạt tài khoản"
+      greeting: "Xin chào"
+      content: "Chào mừng bạn đến với Ứng dụng Mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt"
+      information: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
+      activated: "Đã kích hoạt"
+      invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
+      not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email của bạn để lấy liên kết kích hoạt."

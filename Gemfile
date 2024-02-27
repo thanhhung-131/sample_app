@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 gem "bootstrap-sass", "~> 3.4.1"
 gem "config"
 gem "faker", "2.21.0"
+gem "figaro"
 gem "pagy"
 gem "rails-i18n"
 gem "rails-settings-cached"
