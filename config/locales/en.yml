@@ -12,6 +12,7 @@ en:
       edit_user: "Edit User"
       user_mailer: "User Mailer"
       forgot_password: "Forgot Password"
+      view_my_profile: "View my profile"
     messages:
       success: "Successfully!"
       error: "Fail, please try again!"
@@ -23,6 +24,7 @@ en:
       not_authorized: "Not authorized!"
       deleted_success: "Deleted successfully!"
       forgot_password: "(forgot password)"
+      login_required: "You need to log in! Please %{login_link} to access this page."
   helpers:
     page_title: "Ruby on Rails Tutorials Sample App"
   static_pages:
@@ -67,3 +69,21 @@ en:
       password_reset_expired: "Password reset has expired"
       password_reset_success: "Password has been reset"
       password_reset_failed: "Password reset failed"
+  microposts:
+    title: "Microposts"
+    title_quantity: "Microposts (%{quantity})"
+    post: "Post"
+    text: "Compose new micropost..."
+    posted_ago: "Posted %{time_ago} ago."
+    feed: "Micropost Feed"
+    image:
+      must_be_valid: "must be a valid image format"
+      max_size: "should be less than 5MB"
+    create:
+      success: "Micropost created"
+      fail: "Created fail"
+    destroy:
+      success: "Micropost deleted"
+      fail: "Deleted fail"
+    correct_user:
+      invalid: "Micropost invalid"
