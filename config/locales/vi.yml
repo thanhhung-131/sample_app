@@ -14,6 +14,7 @@ vi:
       error: "Thất bại, vui lòng thử lại!"
       user_not_found: "Không tìm thấy người dùng!"
       invalid_email_password_combination: "Email/mật khẩu không hợp lệ!"
+      remember_me: "Ghi nhớ tài khoản"
   helpers:
     page_title: "Ứng dụng Mẫu Ruby on Rails"
   static_pages:
