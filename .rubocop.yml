@@ -2,3 +2,8 @@ Style/StringLiterals:
   EnforcedStyle: double_quotes
   Exclude:
     - "Gemfile"
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: "[]"
+    "%i":    "()"
