@@ -1,0 +1,4 @@
+<% provide :title, t(:new_zone) %>
+
+<h1><%= t(:new_zone)%></h1>
+<%= render partial: "form", locals: {zone: @zone, date: @date} %>
