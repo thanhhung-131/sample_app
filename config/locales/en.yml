@@ -1,72 +1,17 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
-  show_product: "Show this product"
-  back_to_products: "Back to products"
-  edit_product: "Edit this product"
-  destroy_product: "Destroy this product"
-  created_product: "Product was successfully created."
-  updated_product: "Product was successfully updated."
-  destroyed_product: "Product was successfully destroyed."
-  ruby_tutorial: "Ruby on Rails Tutorial %{project_name}"
-  name: "sample app"
-  name_: "Name:"
-  zone: "Zone:"
-  date: "Date:"
-  zone_new: "Zone New Action"
-  zone_edit: "Zone Edit Action"
-  not_found: "%{model} not found"
-  product: "product"
-  user: "user"
-  home: "home"
-  help: "help"
-  login: "login"
-  edit_zone: "Edit Zone"
-  new_zone: "New Zone"
-  new_product: "New Product"
-  editing_product: "Editing Product"
-  products: "Products"
-  static_pages_help: "StaticPages/Help"
-  static_pages_home: "StaticPages/Home"
-  active_record:
-    models:
-      product: "Product"
-  errors:
-    prohibited_saved: "prohibited this %{model} from being saved:"
-    format: "%{attribute} %{message}"
-    messages:
-      blank: "can't be blank"
-      taken: "has already been taken"
-    models:
-      product:
-        attributes:
-          name:
-            blank: "can't be blank"
+  layouts:
+    header:
+      sample_app: "Sample App"
+      home: "Home"
+      help: "Help"
+      log_in: "Log In"
+  helpers:
+    page_title: "Ruby on Rails Tutorials Sample App"
+  static_pages:
+    home:
+      title: "Home"
+    help:
+      title: "Help"
+      sign_up: "Sign Up"
+      create_my_account: "Create My Account"
+      confirmation: "Confirmation"
