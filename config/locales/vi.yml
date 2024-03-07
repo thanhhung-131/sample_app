@@ -5,6 +5,12 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+    messages:
+      sign_up_success: "Đăng ký thành công!"
+      sign_up_error: "Đăng ký thất bại, vui lòng thử lại!"
+      sign_in_success: "Đăng nhập thành công!"
+      sign_in_error: "Đăng nhập thất bại, vui lòng thử lại!"
+      user_not_found: "Không tìm thấy người dùng!"
   helpers:
     page_title: "Ứng dụng Mẫu Ruby on Rails"
   static_pages:
@@ -15,3 +21,11 @@ vi:
       sign_up: "Đăng ký"
       create_my_account: "Tạo tài khoản"
       confirmation: "Xác nhận"
+  sign_up: "Đăng ký"
+  confirmation: "Xác nhận"
+  create_my_account: "Tạo tài khoản"
+  gender:
+    prompt: "Chọn giới tính"
+    female: "nữ"
+    male: "nam"
+    other: "khác"

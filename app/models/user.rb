@@ -8,10 +8,11 @@ class User < ApplicationRecord
 
   before_save :downcase_email
 
-  validates :name, presence: true, length: { maximum: Settings.user.name.max_length }
-  validates :email, presence: true, length: { maximum: Settings.user.email.max_length },
+  validates :name, presence: true, length: { maximum: Settings.digit_50 }
+  validates :email, presence: true, length: { maximum: Settings.digit_255 },
                     format: { with: VALIDATE_EMAIL_REGEX }, uniqueness: true
-  validates :password, presence: true, length: { minimum: Settings.user.password.min_length }
+  validates :password, presence: true, length: { minimum: Settings.digit_6 }
+  validates :gender, presence: true
   validates :birthday, presence: true
   validate :birthday_within_last_100_years
 
@@ -22,7 +23,7 @@ class User < ApplicationRecord
   end
 
   def birthday_within_last_100_years
-    return if birthday >= Settings.user.age.HUNDRED_YEARS_OLD.years.ago.to_date
+    return unless birthday < Settings.HUNDRED_YEARS_OLD.years.ago.to_date
 
     errors.add(:birthday, :birthday_within_last_100_years)
   end

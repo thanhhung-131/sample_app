@@ -1,9 +1,4 @@
-user:
-  name:
-    max_length: 50
-  email:
-    max_length: 255
-  password:
-    min_length: 6
-  age:
-    HUNDRED_YEARS_OLD: 100
+digit_50: 50
+digit_255: 255
+digit_6: 6
+HUNDRED_YEARS_OLD: 100
