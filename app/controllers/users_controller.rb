@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:warning] = t("user_not_found")
+    flash[:warning] = t("layouts.messages.user_not_found")
     redirect_to root_path
   end
 
@@ -17,10 +17,12 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = I18n.t("layouts.messages.sign_up_success")
+      reset_session
+      log_in @user
+      flash[:success] = I18n.t("layouts.messages.success")
       redirect_to @user
     else
-      flash[:error] = I18n.t("layouts.messages.sign_up_error")
+      flash[:error] = I18n.t("layouts.messages.error")
       render :new, status: :unprocessable_entity
     end
   end
