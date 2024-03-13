@@ -9,12 +9,17 @@ vi:
       profile: "Trang cá nhân"
       settings: "Cài đặt"
       account: "Tài khoản"
+      edit_user: "Chỉnh sửa thông tin"
     messages:
       success: "Thành công!"
       error: "Thất bại, vui lòng thử lại!"
       user_not_found: "Không tìm thấy người dùng!"
       invalid_email_password_combination: "Email/mật khẩu không hợp lệ!"
       remember_me: "Ghi nhớ tài khoản"
+      updated_success: "Cập nhật thành công!"
+      please_log_in: "Vui lòng đăng nhập!"
+      not_authorized: "Không được phép!"
+      deleted_success: "Xóa thành công!"
   helpers:
     page_title: "Ứng dụng Mẫu Ruby on Rails"
   static_pages:
@@ -25,9 +30,21 @@ vi:
       sign_up: "Đăng ký"
       create_my_account: "Tạo tài khoản"
       confirmation: "Xác nhận"
-  sign_up: "Đăng ký"
-  confirmation: "Xác nhận"
-  create_my_account: "Tạo tài khoản"
+  users:
+    new:
+      sign_up: "Đăng ký"
+      create_my_account: "Tạo tài khoản"
+      confirmation: "Xác nhận"
+    edit:
+      update_profile: "Cập nhật thông tin cá nhân"
+      save_changes: "Lưu thay đổi"
+      change: "Thay đổi"
+    index:
+      all_users: "Tất cả người dùng"
+      user_not_found: "Không tìm thấy người dùng!"
+    delete:
+      link: "xóa"
+      are_you_sure: "Bạn có chắc chắn?"
   gender:
     prompt: "Chọn giới tính"
     female: "nữ"

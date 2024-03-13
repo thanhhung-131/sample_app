@@ -1,23 +1,8 @@
-<% provide :title, t("sign_up") %>
-<h1><%= t("sign_up") %></h1>
+<% provide :title, t("users.new.sign_up") %>
+<% provide :button_text, t("users.new.create_my_account") %>
+<h1><%= t("users.new.sign_up") %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <!-- return elements of form tag in HTML(input, label, url, method(support put, patch, delete by using _method)), docs: https://api.rubyonrails.org/v5.2/classes/ActionView/Helpers/FormHelper.html#method-i-form_for -->
-    <%= form_for @user, url: signup_path do |f| %>
-      <%= render "shared/error_messages" %>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-      <%= f.label :email %>
-      <%= f.email_field :email %>
-      <%= f.label :birthday %>
-      <%= f.date_field :birthday %>
-      <%= f.label :gender %>
-      <%= f.select :gender, [t("gender.female"), t("gender.male"), t("gender.other")], prompt: t("gender.prompt") %>
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-      <%= f.label :password_confirmation, t("confirmation") %>
-      <%= f.password_field :password_confirmation %>
-      <%= f.submit t("create_my_account"), class: "btn btn-primary" %>
-    <% end %>
+    <%= render "form" %>
   </div>
 </div>

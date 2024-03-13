@@ -9,12 +9,17 @@ en:
       profile: "Profile"
       settings: "Settings"
       account: "Account"
+      edit_user: "Edit User"
     messages:
       success: "Successfully!"
       error: "Fail, please try again!"
       user_not_found: "User not found!"
       invalid_email_password_combination: "Invalid email/password combination!"
       remember_me: "Remember me"
+      updated_success: "Updated successfully!"
+      please_log_in: "Please log in!"
+      not_authorized: "Not authorized!"
+      deleted_success: "Deleted successfully!"
   helpers:
     page_title: "Ruby on Rails Tutorials Sample App"
   static_pages:
@@ -25,9 +30,21 @@ en:
       sign_up: "Sign Up"
       create_my_account: "Create My Account"
       confirmation: "Confirmation"
-  sign_up: "Sign Up"
-  confirmation: "Confirmation"
-  create_my_account: "Create My Account"
+  users:
+    new:
+      sign_up: "Sign Up"
+      create_my_account: "Create My Account"
+      confirmation: "Confirmation"
+    edit:
+      update_profile: "Update your profile"
+      save_changes: "Save Changes"
+      change: "Change"
+    index:
+      all_users: "All Users"
+      user_not_found: "User not found !"
+    delete:
+      link: "delete"
+      are_you_sure: "Are you sure?"
   gender:
     prompt: "Select Gender"
     female: "female"

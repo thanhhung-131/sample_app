@@ -13,10 +13,12 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: Settings.digit_50 }
   validates :email, presence: true, length: { maximum: Settings.digit_255 },
                     format: { with: VALIDATE_EMAIL_REGEX }, uniqueness: true
-  validates :password, presence: true, length: { minimum: Settings.digit_6 }
+  validates :password, presence: true, length: { minimum: Settings.digit_6 }, allow_nil: true
   validates :gender, presence: true
   validates :birthday, presence: true
-  validate :birthday_within_last_100_years
+  validate :birthday_within_last_100_years, if: -> { birthday.present? }
+
+  scope :sort_by_name, -> { order(:name) }
 
   class << self
     def digest(string)
@@ -43,7 +45,9 @@ class User < ApplicationRecord
   end
 
   def authenticated?(remember_token)
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    return false if remember_digest.blank?
+
+    BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
 
   private
@@ -53,8 +57,6 @@ class User < ApplicationRecord
   end
 
   def birthday_within_last_100_years
-    return unless birthday < Settings.HUNDRED_YEARS_OLD.years.ago.to_date
-
-    errors.add(:birthday, :birthday_within_last_100_years)
+    errors.add(:birthday, :birthday_within_last_100_years) if birthday < Settings.HUNDRED_YEARS.years.ago.to_date
   end
 end

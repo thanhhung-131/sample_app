@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   # signup
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
-  resources :users, only: %i(new create show)
+  resources :users
 end

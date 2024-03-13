@@ -8,10 +8,9 @@ class SessionsController < ApplicationController
 
   def create
     if @user.authenticate params.dig(:session, :password)
-      reset_session
       log_in @user
       params.dig(:session, :remember_me) == "1" ? remember(@user) : forget(@user)
-      redirect_to @user
+      redirect_back_or @user
     else
       flash.now[:danger] = t("layouts.messages.invalid_email_password_combination")
       render :new, status: :unprocessable_entity
