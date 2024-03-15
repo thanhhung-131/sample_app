@@ -2,7 +2,7 @@
 
 # User model
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   VALIDATE_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -22,6 +22,10 @@ class User < ApplicationRecord
   scope :sort_by_name, -> { order(:name) }
 
   class << self
+    def new_token
+      SecureRandom.urlsafe_base64
+    end
+
     def digest(string)
       cost = if ActiveModel::SecurePassword.min_cost
                BCrypt::Engine::MIN_COST
@@ -30,10 +34,19 @@ class User < ApplicationRecord
              end
       BCrypt::Password.create string, cost:
     end
+  end
 
-    def new_token
-      SecureRandom.urlsafe_base64
-    end
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
   end
 
   def remember
@@ -73,5 +86,12 @@ class User < ApplicationRecord
 
   def birthday_within_last_100_years
     errors.add(:birthday, :birthday_within_last_100_years) if birthday < Settings.HUNDRED_YEARS.years.ago.to_date
+  end
+
+  def check_expiration
+    return unless @user.password_reset_expired?
+
+    flash[:danger] = t("users.mailer.password_reset_expired")
+    redirect_to new_password_reset_url
   end
 end

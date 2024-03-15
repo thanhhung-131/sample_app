@@ -22,3 +22,7 @@ en:
             birthday:
               blank: "can't be blank"
               birthday_within_last_100_years: "must be within the last 100 years"
+            password:
+              blank: "can't be blank"
+              too_short: "is too short (minimum is %{count} characters)"
+              too_long: "is too long (maximum is %{count} characters)"
