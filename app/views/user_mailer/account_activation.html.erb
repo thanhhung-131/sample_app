@@ -1,0 +1,4 @@
+<h1><%= t("layouts.header.sample_app") %></h1>
+<p><%= t("users.mailer.greeting") %> <%= @user.name %>,</p>
+<p><%= t("users.mailer.content") %></p>
+<%= link_to t("users.mailer.activate"), edit_account_activation_url(id: @user.activation_token, email: @user.email)%>

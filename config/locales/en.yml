@@ -10,6 +10,7 @@ en:
       settings: "Settings"
       account: "Account"
       edit_user: "Edit User"
+      user_mailer: "User Mailer"
     messages:
       success: "Successfully!"
       error: "Fail, please try again!"
@@ -41,12 +42,16 @@ en:
       change: "Change"
     index:
       all_users: "All Users"
-      user_not_found: "User not found !"
+      user_not_found: "User not found!"
     delete:
       link: "delete"
       are_you_sure: "Are you sure?"
-  gender:
-    prompt: "Select Gender"
-    female: "female"
-    male: "male"
-    other: "other"
+    mailer:
+      activation: "Account Activation"
+      greeting: "Hi"
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+      information: "Please check your email to activate your account."
+      activated: "Activated"
+      invalid_activation_link: "Invalid activation link"
+      not_activated: "Account not activated. Check your email for the activation link."

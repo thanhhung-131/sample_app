@@ -1,7 +1,7 @@
 digit_50: 50
 digit_255: 255
 digit_6: 6
-HUNDRED_YEARS_OLD: 100
+HUNDRED_YEARS: 100
 size_50: 50
 size_80: 80
 option_gender: ["male", "female", "other"]
