@@ -25,6 +25,7 @@ vi:
       deleted_success: "Xóa thành công!"
       forgot_password: "(quên mật khẩu)"
       login_required: "Bạn cần đăng nhập! Vui lòng %{login_link} để truy cập trang này."
+      relationship_not_found: "Không tìm thấy mối quan hệ!"
   helpers:
     page_title: "Ứng dụng Mẫu Ruby on Rails"
   static_pages:
@@ -75,6 +76,7 @@ vi:
     post: "Đăng"
     text: "Viết bài viết ngắn mới..."
     posted_ago: "Đăng %{time_ago} trước."
+    feed: "Dòng bài viết ngắn"
     image:
       must_be_valid: "phải là định dạng hình ảnh hợp lệ"
       max_size: "nên nhỏ hơn 5MB"
@@ -83,3 +85,8 @@ vi:
       fail: "Xóa thất bại"
     correct_user:
       invalid: "Bài viết ngắn không hợp lệ"
+  relationships:
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"

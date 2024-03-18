@@ -25,6 +25,7 @@ en:
       deleted_success: "Deleted successfully!"
       forgot_password: "(forgot password)"
       login_required: "You need to log in! Please %{login_link} to access this page."
+      relationship_not_found: "Relationship not found!"
   helpers:
     page_title: "Ruby on Rails Tutorials Sample App"
   static_pages:
@@ -87,3 +88,8 @@ en:
       fail: "Deleted fail"
     correct_user:
       invalid: "Micropost invalid"
+  relationships:
+    follow: "Follow"
+    unfollow: "Unfollow"
+    following: "Following"
+    followers: "Followers"
