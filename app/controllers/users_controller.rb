@@ -7,7 +7,9 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
-  def show; end
+  def show
+    @page, @microposts = pagy @user.microposts, items: Settings.page_10
+  end
 
   def new
     @user = User.new
@@ -61,14 +63,6 @@ class UsersController < ApplicationController
 
     flash[:warning] = I18n.t("layouts.messages.user_not_found")
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = I18n.t("layouts.messages.please_log_in")
-    redirect_to login_path
   end
 
   def correct_user

@@ -11,6 +11,8 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true, length: { maximum: Settings.digit_50 }
   validates :email, presence: true, length: { maximum: Settings.digit_255 },
                     format: { with: VALIDATE_EMAIL_REGEX }, uniqueness: true
@@ -56,6 +58,10 @@ class User < ApplicationRecord
 
   def forget
     update_columns remember_digest: nil
+  end
+
+  def feed
+    microposts
   end
 
   def activate

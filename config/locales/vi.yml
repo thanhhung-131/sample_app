@@ -12,6 +12,7 @@ vi:
       edit_user: "Chỉnh sửa thông tin"
       user_mailer: "Thư người dùng"
       forgot_password: "Quên mật khẩu"
+      view_my_profile: "Xem trang cá nhân của tôi"
     messages:
       success: "Thành công!"
       error: "Thất bại, vui lòng thử lại!"
@@ -23,6 +24,7 @@ vi:
       not_authorized: "Không được phép!"
       deleted_success: "Xóa thành công!"
       forgot_password: "(quên mật khẩu)"
+      login_required: "Bạn cần đăng nhập! Vui lòng %{login_link} để truy cập trang này."
   helpers:
     page_title: "Ứng dụng Mẫu Ruby on Rails"
   static_pages:
@@ -67,3 +69,17 @@ vi:
       password_reset_expired: "Liên kết đặt lại mật khẩu đã hết hạn"
       password_reset_success: "Mật khẩu đã được đặt lại"
       password_reset_failed: "Đặt lại mật khẩu thất bại"
+  microposts:
+    title: "Bài viết ngắn"
+    title_quantity: "Bài viết ngắn (%{quantity})"
+    post: "Đăng"
+    text: "Viết bài viết ngắn mới..."
+    posted_ago: "Đăng %{time_ago} trước."
+    image:
+      must_be_valid: "phải là định dạng hình ảnh hợp lệ"
+      max_size: "nên nhỏ hơn 5MB"
+    destroy:
+      success: "Bài viết ngắn đã được xóa"
+      fail: "Xóa thất bại"
+    correct_user:
+      invalid: "Bài viết ngắn không hợp lệ"

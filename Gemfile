@@ -41,12 +41,14 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i(windows jruby)
 
 # Reduces boot times through caching; required in config/boot.rb
+gem "active_storage_validations", "0.9.8"
 gem "bcrypt", "~> 3.1.20"
 gem "bootsnap", require: false
 gem "bootstrap-sass", "~> 3.4.1"
 gem "config"
 gem "faker", "2.21.0"
 gem "figaro"
+gem "image_processing", "1.12.2"
 gem "pagy"
 gem "rails-i18n"
 gem "rails-settings-cached"
